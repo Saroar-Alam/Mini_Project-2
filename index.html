@@ -8,16 +8,15 @@
 
     <title>Saroar Alam | Portfolio</title>
 
-    <!-- 1) Tailwind itself (loaded from a CDN, no install needed) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- 2) Your design settings: colors, breakpoints, font -->
+    <!-- design settings: colors, breakpoints, font -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
 
-                    /* Your colors from style.css, given names.
+                    /* colors given names.
                        Now bg-page, bg-card, text-brand, border-line etc. exist. */
                     colors: {
                         page:   '#020b18',   /* body background          */
@@ -35,15 +34,14 @@
                         faint:  '#8d9bab',   /* footer text              */
                     },
 
-                    /* Your two breakpoints (600px and 900px).
+                    /* two breakpoints (500px and 900px).
                        Tailwind's defaults are 640px and 768px;
-                       these override them to match your old CSS. */
+                       these override them. */
                     screens: {
-                        sm: '601px',
+                        sm: '501px',
                         md: '901px',
                     },
 
-                    /* Same font as your old body rule */
                     fontFamily: {
                         sans: ['Arial', 'Helvetica', 'sans-serif'],
                     },
@@ -52,7 +50,6 @@
         }
     </script>
 
-    <!-- style.css is no longer needed on this page -->
 
 </head>
 
