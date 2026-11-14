@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saroar Alam | Portfolio</title>
+
+    <!-- 1) Tailwind itself (loaded from a CDN, no install needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2) Your design settings: colors, breakpoints, font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    /* Your colors from style.css, given names.
+                       Now bg-page, bg-card, text-brand, border-line etc. exist. */
+                    colors: {
+                        page:   '#020b18',   /* body background          */
+                        panel:  '#071525',   /* header background        */
+                        card:   '#0b1a2e',   /* cards and profile boxes  */
+                        line:   '#1c3957',   /* all borders              */
+                        deep:   '#010710',   /* footer background        */
+                        brand: {
+                            DEFAULT: '#2196ff',  /* bg-brand, text-brand */
+                            dark:    '#0b7bd3',  /* bg-brand-dark (hover) */
+                        },
+                        soft:   '#d5e3f1',   /* hero subtitle            */
+                        muted:  '#aebdcc',   /* normal paragraph text    */
+                        subtle: '#9eacbc',   /* card paragraph text      */
+                        faint:  '#8d9bab',   /* footer text              */
+                    },
+
+                    /* Your two breakpoints (600px and 900px).
+                       Tailwind's defaults are 640px and 768px;
+                       these override them to match your old CSS. */
+                    screens: {
+                        sm: '601px',
+                        md: '901px',
+                    },
+
+                    /* Same font as your old body rule */
+                    fontFamily: {
+                        sans: ['Arial', 'Helvetica', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- style.css is no longer needed on this page -->
+
+</head>
+
+
+<body class="bg-page text-white font-sans leading-[1.6]">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="bg-panel border-b border-line">
+
+        <div class="max-w-[1200px] mx-auto px-8 py-5 flex flex-col items-center gap-5 md:flex-row md:justify-between">
+
+            <h1 class="text-3xl font-bold text-brand">
+                Saroar Alam
+            </h1>
+
+            <nav class="flex flex-wrap justify-center gap-6 sm:flex-nowrap sm:justify-start">
+
+                <a href="education.html" class="hover:text-brand">Education</a>
+
+                <a href="skills.html" class="hover:text-brand">Skills</a>
+
+                <a href="projects.html" class="hover:text-brand">Projects</a>
+
+                <a href="achievement.html" class="hover:text-brand">Achievement</a>
+
+                <a href="contact_me.html" class="hover:text-brand">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="max-w-[1200px] mx-auto px-8 py-20 flex flex-col items-center gap-16 text-center md:flex-row md:justify-between md:text-left">
+
+            <div class="flex-1">
+
+                <p class="text-xl text-brand mt-5 mb-1">
+                    Hello, I'm
+                </p>
+
+                <h2 class="text-[40px] sm:text-[55px] font-bold text-brand">
+                    Saroar Alam
+                </h2>
+
+                <h3 class="text-2xl font-normal text-soft mt-1 mb-6">
+                    Computer Science & Engineering Student
+                </h3>
+
+                <p class="max-w-[650px] text-[17px] text-muted my-4 mx-auto md:mx-0">
+                    I am a Computer Science and Engineering student
+                    with a strong interest in software development,
+                    competitive programming, and technology.
+                    I am also passionate about Artificial Intelligence
+                    and Machine Learning.
+                </p>
+
+                <div class="mt-8 flex justify-center gap-4 md:justify-start">
+
+                    <a href="projects.html"
+                       class="px-6 py-3 bg-brand text-white font-bold rounded-lg transition-all duration-300 hover:bg-brand-dark hover:-translate-y-0.5">
+                        View My Projects
+                    </a>
+
+                    <a href="contact_me.html"
+                       class="px-6 py-3 bg-transparent border border-brand text-brand font-bold rounded-lg transition-all duration-300 hover:bg-brand-dark hover:text-white hover:-translate-y-0.5">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="flex-1 flex justify-center">
+
+                <img
+                    src="My_Photo.jpeg"
+                    alt="Photo of Saroar Alam"
+                    class="w-[230px] h-[230px] sm:w-[300px] sm:h-[300px] object-cover rounded-full border-4 border-brand shadow-[0_0_40px_rgba(33,150,255,0.4)]"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="max-w-[1200px] mx-auto px-8 py-12 border-t border-line">
+
+            <h2 class="text-[32px] font-bold text-white my-6">About Me</h2>
+
+            <p class="max-w-[800px] text-muted my-4">
+                I am a Computer Science and Engineering student
+                with a strong interest in software development and
+                technology. My goal is to become a skilled Software
+                Engineer and build practical, efficient, and
+                user-friendly applications.
+            </p>
+
+            <p class="max-w-[800px] text-muted my-4">
+                I am also passionate about Competitive Programming,
+                where I enjoy solving problems and improving my
+                programming and problem-solving skills.
+            </p>
+
+            <p class="max-w-[800px] text-muted my-4">
+                Along with software development and competitive
+                programming, I have basic knowledge of Artificial
+                Intelligence and Machine Learning and I am interested
+                in exploring these fields further.
+            </p>
+
+        </section>
+
+
+        <!-- ================= PORTFOLIO ================= -->
+
+        <section class="max-w-[1200px] mx-auto px-8 py-12 border-t border-line">
+
+            <h2 class="text-[32px] font-bold text-white my-6">Explore My Portfolio</h2>
+
+
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
+
+                <!-- Education -->
+
+                <article class="bg-card border border-line rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-[0_8px_25px_rgba(33,150,255,0.15)]">
+
+                    <h3 class="text-xl font-bold text-white my-5">Education</h3>
+
+                    <p class="text-subtle my-4">
+                        Learn about my academic background.
+                    </p>
+
+                    <a href="education.html" class="font-bold text-brand hover:underline">
+                        View Education →
+                    </a>
+
+                </article>
+
+
+                <!-- Skills -->
+
+                <article class="bg-card border border-line rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-[0_8px_25px_rgba(33,150,255,0.15)]">
+
+                    <h3 class="text-xl font-bold text-white my-5">Skills</h3>
+
+                    <p class="text-subtle my-4">
+                        Explore my technical skills and knowledge.
+                    </p>
+
+                    <a href="skills.html" class="font-bold text-brand hover:underline">
+                        View Skills →
+                    </a>
+
+                </article>
+
+
+                <!-- Projects -->
+
+                <article class="bg-card border border-line rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-[0_8px_25px_rgba(33,150,255,0.15)]">
+
+                    <h3 class="text-xl font-bold text-white my-5">Projects</h3>
+
+                    <p class="text-subtle my-4">
+                        See the projects I have worked on.
+                    </p>
+
+                    <a href="projects.html" class="font-bold text-brand hover:underline">
+                        View Projects →
+                    </a>
+
+                </article>
+
+
+                <!-- Achievement -->
+
+                <article class="bg-card border border-line rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-[0_8px_25px_rgba(33,150,255,0.15)]">
+
+                    <h3 class="text-xl font-bold text-white my-5">Achievement</h3>
+
+                    <p class="text-subtle my-4">
+                        Explore my achievements and milestones.
+                    </p>
+
+                    <a href="achievement.html" class="font-bold text-brand hover:underline">
+                        View Achievements →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROFILE ================= -->
+
+        <section class="max-w-[1200px] mx-auto px-8 py-12 border-t border-line">
+
+            <h2 class="text-[32px] font-bold text-white my-6">My Profiles</h2>
+
+            <div class="flex flex-col gap-6 sm:flex-row">
+
+                <div class="bg-card border border-line rounded-xl p-5 min-w-[220px]">
+
+                    <h3 class="text-lg font-bold mb-4">GitHub</h3>
+
+                    <a
+                        href="https://github.com/Saroar-Alam"
+                        target="_blank"
+                        class="text-brand hover:underline"
+                    >
+                        Saroar Alam
+                    </a>
+
+                </div>
+
+
+                <div class="bg-card border border-line rounded-xl p-5 min-w-[220px]">
+
+                    <h3 class="text-lg font-bold mb-4">LinkedIn</h3>
+
+                    <a
+                        href="https://www.linkedin.com/in/saroar-alam-b542a4303/"
+                        target="_blank"
+                        class="text-brand hover:underline"
+                    >
+                        My LinkedIn Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="mt-8 p-6 text-center bg-deep border-t border-line text-faint">
+
+        <p class="my-4">
+            © 2026 Saroar Alam | All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
